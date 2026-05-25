@@ -26,6 +26,9 @@ function atualizaCronometro() {
         contadores[1].textContent = calculaTempo(tempos{ 1});
     }
 }
+atualizaCronometro();
+setInterval(atualizaCronometro(),1000);
+
 function calculaTempo(tempoObjetivo1) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo1 - tempoAtual;
